@@ -1,0 +1,88 @@
+<templateSet group="React">
+  <template name="jsx" value="/** @jsx React.DOM */" description="JSX pragma" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcc" value="var React = require('react');&#10;&#10;var $VAR$ = React.createClass({&#10;&#10;&#9;render: function() {&#10;&#9;&#9;return (&#10;&#9;&#9;&#9;&lt;div /&gt;$END$&#10;&#9;&#9;);&#10;&#9;}&#10;&#10;});&#10;&#10;module.exports = $VAR$;" description="React-Component" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="&quot;CLASS&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rscu" value="shouldComponentUpdate: function(nextProps, nextState) {&#10;&#9;return $VAR$;$END$&#10;}," description="React-shouldComponentUpdate" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcdm" value="componentDidMount: function() {&#10;&#9;$END$&#10;}," description="React-componentDidMount" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcwu" value="componentWillUpdate: function(nextProps, nextState) {&#10;&#9;$END$&#10;}," description="React-componentWillUpdate" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcwun" value="componentWillUnmount: function() {&#10;&#9;$END$&#10;}," description="React-componentWillUnmount" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcwrp" value="componentWillReceiveProps: function(nextProps) {&#10;&#9;$END$&#10;}," description="React-componentWillReceiveProps" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcwm" value="componentWillMount: function() {&#10;&#9;$END$&#10;}," description="React-componentWillMount" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcdu" value="componentDidUpdate: function(prevProps, prevState) {&#10;&#9;$END$&#10;}," description="React-componentDidUpdate" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rpt" value="propTypes: {&#10;&#9;$VAR$: React.PropTypes.$STR$.isRequired&#10;}," description="React-propTypes" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ren" value="render: function() {&#10;&#9;return (&#10;&#9;&#9;$VAR$&#10;&#9;);&#10;}" description="React-render" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="&quot;&lt;div /&gt;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rgis" value="getInitialState: function() {&#10;&#9;return {&#10;&#9;&#9;$VAR$: $END$&#10;&#9;};&#10;}," description="React-getInitialState" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rss" value="setState({&#10;&#9;$VAR$: $END$&#10;});" description="React-setState" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rsp" value="setProps({&#10;&#9;$VAR$: $END$&#10;});" description="React-setProps" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rgdp" value="getDefaultProps: function() {&#10;&#9;return {&#10;&#9;&#9;$VAR$: $END$&#10;&#9;};&#10;}," description="React-getDefaultProps" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+</templateSet>
