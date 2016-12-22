@@ -68,7 +68,7 @@
       <option name="JS_STATEMENT" value="false" />
     </context>
   </template>
-  <template name="rcc" value="import React from 'react';&#10;import { shouldComponentUpdate } from 'utils/helpers';&#10;&#10;export default class $END$ extends React.Component {&#10;&#9;constructor (props) {&#10;&#9;&#9;super(props);&#10;&#9;&#9;this.state = {};&#10;&#9;}&#10;&#9;&#10;&#9;shouldComponentUpdate = shouldComponentUpdate;&#10;&#10;&#9;render () {&#10;&#9;&#9;return (&#10;&#9;&#9;&#9;&lt;div&gt;&lt;/div&gt;&#10;&#9;&#9;);&#10;&#9;}&#10;}&#10;" description="React Component" toReformat="true" toShortenFQNames="true">
+  <template name="rcc" value="import React from 'react';&#10;&#10;export default class $END$ extends React.Component {&#10;&#9;constructor (props) {&#10;&#9;&#9;super(props);&#10;&#9;&#9;this.state = {};&#10;&#9;}&#10;&#9;&#10;&#9;render () {&#10;&#9;&#9;return (&#10;&#9;&#9;&#9;&lt;div&gt;&lt;/div&gt;&#10;&#9;&#9;);&#10;&#9;}&#10;}&#10;" description="React Component" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -97,7 +97,8 @@
       <option name="JSX_HTML" value="true" />
     </context>
   </template>
-  <template name="cs" value="const state = this.state;$END$" description="const state" toReformat="true" toShortenFQNames="true">
+  <template name="cs" value="const { $VAR$ } = this.state;$END$" description="const state" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -136,6 +137,13 @@
     </context>
   </template>
   <template name="ccr" value="constructor (props) {&#10;    super(props);&#10;    $END$&#10;}" description="Constructor with props" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rsc" value="import React from 'react';&#10;&#10;const $NAME$ = ({ $PROP$ }) =&gt; {&#10;  return (&lt;div&gt;$NAME$&lt;/div&gt;);&#10;};&#10;&#10;$NAME$.propTypes = {&#10;  $PROP$: React.PropTypes.object.isRequired,&#10;};&#10;&#10;export default $NAME$;" description="React Stateless Component" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
